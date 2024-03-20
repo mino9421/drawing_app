@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Konva from "konva";
-import { render } from "react-dom";
+// import { render } from "react-dom";
+import { createRoot } from "react-dom/client";
 import { Stage, Layer, Rect, Text } from "react-konva";
 
 class ColoredRect extends React.Component {
@@ -39,3 +40,7 @@ function ColorChanger(props) {
 }
 
 export default ColorChanger;
+
+const container = document.getElementById("app");
+const root = createRoot(container);
+root.render(<ColorChanger />);

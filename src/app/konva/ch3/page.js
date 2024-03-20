@@ -6,5 +6,6 @@ const ColorChanger = dynamic(() => import("../../../components/ColorChanger"), {
 });
 
 export default function Page(props) {
-  return <ColorChanger />;
+  return <h1>the page was deprecated- WIP</h1>;
+  // <ColorChanger />;
 }
